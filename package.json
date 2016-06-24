@@ -1,0 +1,22 @@
+{
+  "name": "wordpress-flightplan",
+  "version": "1.0.0",
+  "description": "Deploying WordPress theme with flightplan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IntroCept/wordpress-flightplan.git"
+  },
+  "author": "amrit.gc@introcept.co",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IntroCept/wordpress-flightplan/issues"
+  },
+  "homepage": "https://github.com/IntroCept/wordpress-flightplan#readme",
+  "devDependencies": {
+    "flightplan": "^0.6.14"
+  }
+}
