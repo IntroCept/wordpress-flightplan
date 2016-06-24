@@ -37,3 +37,11 @@ plan.local(function (local) {
   local.transfer(filesToCopy, webRoot);
   local.log('Uploading Complete.......');
 });
+
+plan.remote(function (remote) {
+  var webRoot = plan.runtime.options.webRoot;
+  remote.log('changing permission of all files to 644');
+  remote.exec('find ' + webRoot + ' -type f -exec chmod 644 {} +');
+  remote.log('changing permission of all folders to 755');
+  remote.exec('find ' + webRoot + ' -type d -exec chmod 755 {} +');
+});
